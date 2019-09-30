@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2019_09_30_131447) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "slug"
-    t.integer "status"       default: 0
+    t.integer "status"
     t.index ["slug"], name: "index_blogs_on_slug", unique: true
   end
 
